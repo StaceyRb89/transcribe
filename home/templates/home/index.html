@@ -1,8 +1,109 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<body>
-    <h1>hi</h1>
-   
-</body>
+<!-- Jumbotron -->
+<header>
+    <!-- Background image -->
+
+    <div class="p-5 text-center bg-image">
+    </div>
+    <div class="mask">
+      <div class="d-flex justify-content-center align-items-center h-100 p-2">
+        <div class="text-white text-center">
+          <!-- <h3 class="mb-3">Scribes Alive</h3> -->
+          <h5 class="mb-3">Offers you a personal, reliable and accurate audio transcription service, bespoke to you
+            and your project.</h5>
+          <a class="btn btn-outline-light btn-lg" href="{% url 'contact' %}" role="button">Contact us!</a>
+          <!-- mailto:pamwyatt@protonmail.com -->
+          
+
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+  <section>
+    <!-- quote or text -->
+
+    <div class=" text-center p-2 m-2 img-fluid">
+      <div class="ai-quote">
+        <h3>Why we're better than Ai</h3>
+      </div>
+      <!-- </div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-justify">
+            <i class="fas fa-regular fa-user d-flex flex-column align-items-center text-center" alt="Your Image"
+              class="img-fluid"></i>
+            <!-- <h2>bird</h2> -->
+            <h6 class="p-2">All our transcripts are produced by real people and never through AI.
+              A human transcriber can produce an accurate transcript, working through
+              all the nuances of the subject, decipher strong accents and distinguish
+              multiple speakers, whilst taking the extra attention to detail needed for
+              an accurate record of what is being said. A human transcriber will also
+              take the extra time to research names, places and technical terminology
+              to ensure complete accuracy.</h6>
+          </div>
+          <div class="col-md-6 text-justify">
+            <i class="fas fa-solid fa-school d-flex flex-column align-items-center text-center" alt="Your Image"
+              class="img-fluid"></i>
+            <!-- <h2>bird</h2> -->
+            <h6 class="p-2">Our team has experience working in all industries and subject areas, with an excellent
+              ear for a wide variety of national and international accents. Every one of us takes great
+              pride in returning fully researched, proofread and accurate transcripts for our clients.
+              Check out The Basics to make a start in planning your transcription project. If you need
+              more information or extra help we will be happy to advise you further.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- quote or text -->
+    <div class="text-center bg-light p-2 m-2 img-fluid">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>Our transcripts are exclusively crafted by human transcribers, ensuring precision in capturing subject
+          nuances, deciphering strong accents, identifying multiple speakers, and dedicating extra effort to detail.
+          </p>
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">
+          Meet The Team!
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Meet The Team!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="static/images/2.jpeg" class="img-fluid" alt="">
+                <h4>Pamela Grace Wyatt</h4>
+                <p class="small">hi my name is pamela grace wyatt u am profound in</p>
+              </div>
+              <div class="col-md-4">
+                <img src="static/images/2.jpeg" class="img-fluid" alt="">
+                <h4>Pamela Grace Wyatt</h4>
+                <p class="small">hi my name is pamela grace wyatt u am profound in</p>
+              </div>
+              <div class="col-md-4">
+                <img src="static/images/2.jpeg" class="img-fluid" alt="">
+                <h4>Pamela Grace Wyatt</h4>
+                <p class="small">hi my name is pamela grace wyatt u am profound in</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 {% endblock %}
