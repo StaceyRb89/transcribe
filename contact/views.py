@@ -19,7 +19,7 @@ def contact(request):
                 'Contact Form Submission',
                 f'Name: {your_name}\nEmail: {your_email}\n\nMessage:\n{message}',
                 {your_email},  # Change to your email address
-                {your_email},  # Change to the recipient's email address
+                [settings.DEFAULT_FROM_EMAIL],  # Change to the recipient's email address
             )
 
             # Redirect after successful submission
