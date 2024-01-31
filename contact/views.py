@@ -1,13 +1,16 @@
-# Views.py
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from .forms import ContactForm
+
 def contact(request):
     if request.method == 'POST':
-
         form = ContactForm(request.POST)
         if form.is_valid():
-# Process the form data
+            # Process the form data
             your_name = form.cleaned_data['your_name']
             your_email = form.cleaned_data['your_email']
             message = form.cleaned_data['message']
+
             # Send email
             send_mail(
                 'Contact Form Submission',

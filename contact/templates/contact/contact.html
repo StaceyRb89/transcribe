@@ -2,9 +2,16 @@
 {% load crispy_forms_tags %}
 {% block title %}Contact Us{% endblock %}
 {% block content %}
-<h1>Contact Us</h1>
-<form method="post" action="{% url 'contact' %}">
-    {% csrf_token %}
-    {{ form|crispy }}
-</form>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1 class="text-center">Contact Us</h1>
+      <form method="post" action="{% url 'contact' %}" class="contactform">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <button type="submit" class="btn btn-outline-light d-block mx-auto mt-3">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
 {% endblock %}

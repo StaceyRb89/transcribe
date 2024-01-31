@@ -46,7 +46,7 @@ body{
 }
 /* modal */
 
-.form-container {
+.contactform {
     background-image: url('path-to-your-image.jpg'); /* Specify the path to your background image */
     background-size: cover; /* Cover the entire container */
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -55,7 +55,7 @@ body{
     border-radius: 10px; /* Add rounded corners */
   }
 
-.contact {
+.contactform {
     color: rgb(218, 207, 209);
 }
 @media (max-width: 772px) {
