@@ -20,7 +20,7 @@ def contact(request):
             )
 
             # Redirect after successful submission
-            return redirect('contact_success')  # Create a 'contact_success' URL pattern
+            return redirect('contact')  
 
     else:
         form = ContactForm()
