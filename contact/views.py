@@ -1,3 +1,4 @@
+#contact/views.property
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import ContactForm
@@ -13,15 +14,13 @@ def contact(request):
             your_email = form.cleaned_data['your_email']
             message = form.cleaned_data['message']
 
-            print("Before send_mail")  # Add this
             # Send email
             send_mail(
                 'Contact Form Submission',
                 f'Name: {your_name}\nEmail: {your_email}\n\nMessage:\n{message}',
                 {your_email},  # Change to your email address
-                [settings.EMAIL_HOST_USER],  # Change to the recipient's email address
+                {your_email},  # Change to the recipient's email address
             )
-            print("After send_mail")  # Add this
 
             # Redirect after successful submission
             return redirect('contact')  
