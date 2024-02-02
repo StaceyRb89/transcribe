@@ -1,4 +1,6 @@
 {% load static %}
+<!-- base.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +19,7 @@
   <title>{% block title %}Scribes Alive{% endblock %}</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-
+<body>
   <section>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="{% url 'team' %}">Scribes Alive</a>
@@ -40,9 +41,12 @@
     {% block content %}{% endblock %}
   </div>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-light text-muted mt-auto">
+  <!-- footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
     <section class="d-flex justify-content-center p-2 border-bottom">
+      <!-- Left -->
+
       <div>
         <a href="" class="me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
@@ -60,21 +64,31 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
+      <!-- Right -->
     </section>
+    <!-- Section: Social media -->
 
+    <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-2">
+        <!-- Grid row -->
         <div class="row mt-2">
+          <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
+            <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-2">
-              <i class="fa-brands fa-scribd"></i> Scribes Alive
+              <i class="fa-brands fa-scribd"></i>cribes alive
             </h6>
             <p class="small">
               Where Versatility Meets Precision, Crafting Transcripts with a Personal Touch.
             </p>
           </div>
+          <!-- Grid column -->
 
+
+          <!-- Grid column  -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
+
             <h6 class="text-uppercase fw-bold mb-2">
               Useful links
             </h6>
@@ -85,25 +99,42 @@
               <a href="{% url 'contact' %}" class="text-reset">Contact</a>
             </p>
           </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
+            <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-2">Contact</h6>
             <p class="small">
               <i class="fas fa-envelope me-3"></i> scribesalive@proton.me
             </p>
             <p class="small"><i class="fas fa-phone me-3"></i>+33 7391219660</p>
+
           </div>
+          <!-- Grid column -->
         </div>
+        <!-- Grid row -->
       </div>
     </section>
+    <!-- Section: Links  -->
 
+    <!-- Copyright -->
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="#">Nomads Collide</a>
     </div>
+    <!-- Copyright -->
+
   </footer>
-  <!-- Footer -->  
+  <!-- Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e48ce02b6a.js" crossorigin="anonymous"></script>
+  <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 
