@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<title>{% block title %}Meet The Team!{% endblock %}</title>
+<h1 class="text-dark p-2 mb-3 text-center display-5 display-md-1">Meet The Team!</h1>
+<div class="d-flex flex-column flex-md-row justify-content-center">
+    <div class="col-md-4 mb-3">
+        <a href="#" data-toggle="modal" data-target="#exampleModal1">
+            <div class="card text-center"> <!-- Added padding -->
+                <img class="card-img-top" src="{% static 'images/pam-wyatt.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title text-dark">Pamela Grace Wyatt</h3>
+                    <p class="card-text text-dark">Scribes Alive CEO</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+            <div class="card text-center"> <!-- Added padding -->
+                <img class="card-img-top" src="{% static 'images/caroline-jones.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title text-dark">Caroline Jones</h3>
+                    <p class="card-text text-dark">Scribes Alive transcriber</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<!-- Modal 1 for Pamela Wyatt -->
+<div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pamela Grace Wyatt</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal content goes here -->
+                <p>After eleven years working as a librarian at Southampton University, my partner and I decided to
+                    embark on a new adventure and start a smallholding in Portugal. It was at this point I started my
+                    new career in audio transcription and have never looked back.</p>
+
+
+                <p>I have been transcribing now for over ten years, during some fantastic years in Portugal, and
+                    subsequently to France to try our hand at keeping cows along with the rest of our menagerie.</p>
+
+
+                <p>I love that I am still working with academics and students, and also had the opportunity to expand
+                    and work with a variety of businesses and medical professionals. After having spent many years as
+                    part of an amazing small team of transcribers, in 2023 I had the opportunity to start my own small
+                    business, and ScribesAlive was born!</p>
+
+
+                <p>At ScribesAlive, we keep the same ethos as we have always had: working in a small team, collaborating
+                    and interacting despite working hundreds of miles from each other. Also, to make it a feasible way
+                    to earn a decent wage doing something we all love, that fits in around all our other commitments in
+                    life, whilst still leaving time for all the fun things we love to do.</p>
+
+
+                <p>I find it amazing to be able to immerse myself in so many different worlds and subjects that I would
+                    otherwise know nothing about, and to have a fantastic team around me even without being in a
+                    physical office, whilst still being in touch with nature and our animals every day.</p>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Modal 2 for Caroline Jones -->
+<div class="modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Caroline Jones</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal content goes here -->
+                <p>I’m relatively new to audio transcription but love the flexibility it offers. I previously worked in Social
+                    Care in the UK for many years in various roles ranging from community care to administration. I
+                    moved to rural France 3 years ago and still work as a carer, as well as herding cats and trying to grow
+                    vegetables!</p>
+                    <p>
+                    I find the transcription work interesting and varied and learn something new with each job. I joined
+                    Pam’s Team as I wanted to work with others who have a similar work ethic to me.
+                    </p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}
