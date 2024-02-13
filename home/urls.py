@@ -8,3 +8,4 @@ urlpatterns = [
     path('team/', team, name='team'),
     path('faq/', faq, name='faq'),
 ]
+

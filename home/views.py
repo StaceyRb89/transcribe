@@ -9,6 +9,8 @@ def contact_view(request):
     # Your contact view implementation
     return render(request, 'contact/contact.html') 
 
+#added
+
 # the team
 # views.py
 def team(request):
@@ -21,7 +23,9 @@ def team(request):
         ]
     }
 
+
     return render(request, 'home/team.html', {'team_info': team_info})
+
 
 def faq (request):
     return render(request, 'home/faq.html')
