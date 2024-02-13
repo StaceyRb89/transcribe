@@ -32,10 +32,9 @@ if os.path.isfile('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com', '.gitpod.io','www.scribesalive.co.uk', 'scribesalive.co.uk',]
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', '8000-staceyrb89-transcribe-n57spnpm2uy.ws-eu108.gitpod.io','www.scribesalive.co.uk', 'scribesalive.co.uk']
-
-CSRF_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -62,7 +61,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
-	'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -89,7 +88,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.request',
             ],
 			'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
