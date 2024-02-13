@@ -31,7 +31,8 @@ if os.path.isfile('env.py'):
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+#'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com', '.gitpod.io','www.scribesalive.co.uk', 'scribesalive.co.uk',]
 
 #CSRF_COOKIE_SECURE = True
