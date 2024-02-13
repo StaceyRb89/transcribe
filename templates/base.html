@@ -21,7 +21,7 @@
 <body>
   <section>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Scribes Alive</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Scribes Alive</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
       <!-- Left -->
 
       <div>
-        <a href="" class="me-4 text-reset">
+        <!-- <a href="" class="me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="" class="me-4 text-reset">
@@ -59,8 +59,8 @@
         </a>
         <a href="" class="me-4 text-reset">
           <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
+        </a>  -->
+        <a href="https://www.linkedin.com/in/pamela-wyatt-872235b5" class="me-4 text-reset">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
@@ -93,10 +93,10 @@
               Useful links
             </h6>
             <p class="small">
-              <a href="#!" class="text-reset">Frequently Asked Questions</a>
+              <a href="{% url 'contact' %}" class="text-reset">Contact Us</a>
             </p>
             <p class="small">
-              <a href="#!" class="text-reset">Contact</a>
+              <a href="{% url 'faq' %}" class="text-reset">Frequently Asked Questions</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -104,7 +104,7 @@
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-2">Contact</h6>
+            <h6 class="text-uppercase fw-bold mb-2">Contact Info</h6>
             <p class="small">
               <i class="fas fa-envelope me-3"></i>
               scribesalive@proton.me
@@ -122,7 +122,7 @@
     <!-- Copyright -->
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Copyright:
-      <a class="text-reset fw-bold" href="#">Pamela Grace Wyatt</a>
+      <a class="text-reset fw-bold" href="#">Stacey Robson</a>
     </div>
     <!-- Copyright -->
 
