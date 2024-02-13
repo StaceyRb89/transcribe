@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com', '.gitpod.io','www.scribesalive.co.uk', 'scribesalive.co.uk',]
 
-#CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 # Application definition
 
 INSTALLED_APPS = [
