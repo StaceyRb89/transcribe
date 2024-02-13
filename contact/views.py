@@ -1,4 +1,4 @@
-#contact/views.property
+#contact/views.py
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import ContactForm

@@ -1,3 +1,4 @@
+# home/views.py
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
@@ -5,14 +6,11 @@ from django.views.generic import TemplateView
 class Index(TemplateView):
     template_name = 'home/index.html'
 
-def contact_view(request):
-    # Your contact view implementation
-    return render(request, 'contact/contact.html') 
 
 #added
 
 # the team
-# views.py
+# home/views.py
 def team(request):
     # Your logic to fetch team information goes here
     team_info = {
